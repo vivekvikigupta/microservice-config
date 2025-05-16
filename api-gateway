@@ -1,0 +1,21 @@
+server:
+  port: 8060
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicate:
+            - Path=/user/**
+    discovery:
+      locator:
+        enabled: true
+        lower-case-service-id: true
+
+eureka:
+  client:
+    server-url:
+      defaultZone: http://localhost:8761/eureka
