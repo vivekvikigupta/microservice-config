@@ -8,7 +8,7 @@ spring:
       routes:
         - id: user-service
           uri: lb://user-service
-          predicate:
+          predicates:
             - Path=/user/**
     discovery:
       locator:
