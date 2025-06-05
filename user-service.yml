@@ -7,10 +7,8 @@ spring:
     password: viki
     driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
-    host: 'redis-18359.crce206.ap-south-1-1.ec2.redns.redis-cloud.com'
-    port: 18359
-    username: "default"
-    password: "7PtTE0I2XKUv7UXIroicHO4GcLXk3Vob"
+    host: localhost
+    port: 6379
   jpa:
     hibernate:
       ddl-auto: update
