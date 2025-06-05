@@ -6,6 +6,9 @@ spring:
     userName: root
     password: viki
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    host: 6379
   jpa:
     hibernate:
       ddl-auto: update
